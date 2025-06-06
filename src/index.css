@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wegiht@200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: content-box;
+}
+
+.sidebar,
+.layout {
+  height: calc(100dvh - 56px);
+}
+.recharts-bar-rectangle:hover {
+  filter: brightness(0.8) !important;
+}
+.tab {
+  position: relative;
+  user-select: none;
+  display: inline-block;
+}
+
+.tab:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -6px; /* adjust as needed */
+  right: -10%;
+  width: 120%;
+  height: 2px; /* thickness of the green line */
+  background-color: rgb(192, 192, 192);
+  border-radius: 6px 6px 0 0; /* match the rounded ends */
+}
+
+.selected-tab {
+  position: relative;
+  display: inline-block;
+  color: #008745; /* matching green */
+}
+
+.selected-tab::after {
+  content: "";
+  position: absolute;
+  bottom: -6px; /* adjust as needed */
+
+  right: -10%;
+  width: 120%;
+  height: 2px; /* thickness of the green line */
+  background-color: #008745 !important;
+  border-radius: 6px 6px 0 0; /* match the rounded ends */
+}
