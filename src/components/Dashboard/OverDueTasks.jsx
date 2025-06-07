@@ -19,7 +19,7 @@ import {
 const OverDueTasks = () => {
   return (
     <Card className="col-span-6 md:col-span-3  h-72 flex flex-col relative overflow-hidden">
-      <CardHeader className="p-3  border-b flex-shrink-0 bg-white">
+      <CardHeader >
         <div className="flex flex-col gap-1 flex-1">
           <div className="flex justify-between items-center">
             <CardTitle className="text-sm font-semibold  flex gap-2">
@@ -44,9 +44,9 @@ const OverDueTasks = () => {
           <Table className="w-full text-xs  ">
             <TableHeader>
               <TableRow className="bg-neutralLight sticky top-0 z-10">
-                <TableHead className="text-left  ">Name</TableHead>
+                <TableHead className="text-left  ">Task Name</TableHead>
                 <TableHead className="text-left  ">Assigned To</TableHead>
-                <TableHead className="text-center  ">Status</TableHead>
+                <TableHead className="text-left  ">Status</TableHead>
                 <TableHead className="text-center  ">DueDate</TableHead>
                 <TableHead className="text-center  ">Reassign</TableHead>
               </TableRow>
@@ -70,7 +70,7 @@ const OverDueTasks = () => {
                     {employee.dueDate}
                   </TableCell>
                   <TableCell className="text-center ">
-                    <BsPersonPlus className="w-4 h-4 mx-auto cursor-pointer content-box  text-center bg-hover hover:shadow" />
+                    <BsPersonPlus className="w-5 h-5  mx-auto cursor-pointer content-box rounded-md  text-center p-1 bg-hover hover:shadow"  />
                   </TableCell>
                 </TableRow>
               ))}

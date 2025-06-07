@@ -19,7 +19,7 @@ import {
 const EmployeeWise = () => {
   return (
     <Card className="col-span-6 h-72 flex flex-col relative overflow-hidden">
-      <CardHeader className="p-3 pb-1.5 border-b flex-shrink-0 bg-white">
+      <CardHeader className=" pb-1.5 ">
         <div className="flex flex-col gap-1 flex-1">
           <div className="flex justify-between items-center">
             <CardTitle className="text-sm font-semibold ">

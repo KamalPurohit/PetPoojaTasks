@@ -10,7 +10,7 @@ import { RxExternalLink } from "react-icons/rx";
 const WorkFlows = () => {
   return (
     <Card className="col-span-6 md:col-span-3  h-72 flex flex-col relative overflow-hidden">
-      <CardHeader className="p-3  border-b flex-shrink-0 bg-white">
+      <CardHeader>
         <div className="flex flex-col gap-1 flex-1">
           <div className="flex justify-between items-center">
             <CardTitle className="text-sm font-semibold  flex gap-2">

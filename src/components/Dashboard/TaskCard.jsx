@@ -1,5 +1,7 @@
 import React from "react";
 import Badge from "../UI/Badge";
+import { calendar, workflow } from "../../assets/SidebarIcons";
+import { GoClock } from "react-icons/go";
 
 const TaskCard = ({ task }) => {
   return (
@@ -30,19 +32,11 @@ const TaskCard = ({ task }) => {
         <div className="flex items-center gap-1.5">
           <div className="flex items-center gap-2.5">
             <div className="flex items-center gap-0.5 text-neutralsub-content text-xs">
-              <img
-                className="w-4 h-4"
-                alt="Date"
-                src="https://c.animaapp.com/mbjn5sgkKz1Y1O/img/calendar-dotted-2.svg"
-              />
+              <img className="w-4 h-4" alt="Date" src={calendar} />
               <span>{task.date}</span>
             </div>
             <div className="flex items-center gap-0.5 text-neutralsub-content text-xs">
-              <img
-                className="w-4 h-4"
-                alt="Time"
-                src="https://c.animaapp.com/mbjn5sgkKz1Y1O/img/clock.svg"
-              />
+              <GoClock className="w-4 h-4" />
               <span>{task.time}</span>
             </div>
           </div>
@@ -50,11 +44,7 @@ const TaskCard = ({ task }) => {
 
         <div className="flex items-center gap-1.5">
           <div className="bg-white rounded p-0.5">
-            <img
-              className="w-4 h-4"
-              alt="Dataflow"
-              src="https://c.animaapp.com/mbjn5sgkKz1Y1O/img/dataflow-02-1.svg"
-            />
+            <img className="w-4 h-4" alt="Dataflow" src={workflow} />
           </div>
           <div className="flex items-center justify-between flex-1">
             <Badge

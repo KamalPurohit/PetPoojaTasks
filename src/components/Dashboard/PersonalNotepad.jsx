@@ -14,7 +14,7 @@ const PersonalNotepad = () => {
   const [editNotePad, setEditNotePad] = useState([]);
   return (
     <Card className="  col-span-3 max-md:col-span-6 flex-1  h-72 flex flex-col relative overflow-hidden">
-      <CardHeader className="p-3  border-b flex flex-row items-start justify-between flex-shrink-0 bg-white">
+      <CardHeader>
         <div className="flex flex-col gap-1 flex-1">
           <div className="flex flex-col gap-2 flex-1">
             <div className="flex justify-between items-center">
