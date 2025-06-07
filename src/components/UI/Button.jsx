@@ -10,7 +10,7 @@ const Button = React.forwardRef((props, ref) => {
       variant === "default" && "bg-primary text-white hover:bg-dark",
       variant === "ghost" && "bg-transparent hover:bg-hover text-neutral hover:text-black ",
       variant === "outline" &&
-        "border border-border bg-white text-neutral hover:bg-hover",
+        "border border-border bg-white text-neutral hover:bg-hover text-black",
       size === "sm" && "h-8 px-3 text-xs",
       size === "md" && "h-10 px-4 text-sm",
       size === "lg" && "h-12 px-5 text-base",

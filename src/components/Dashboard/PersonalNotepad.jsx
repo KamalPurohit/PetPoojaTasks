@@ -8,6 +8,7 @@ import { BsThreeDots } from "react-icons/bs";
 import TaskCard from "./TaskCard";
 import { RxExternalLink } from "react-icons/rx";
 import { IoCheckmarkCircle } from "react-icons/io5";
+import CheckBox from "../UI/CheckBox";
 
 const PersonalNotepad = () => {
   const [data, setData] = useState(personalNotes);
@@ -52,10 +53,9 @@ const PersonalNotepad = () => {
                 });
               }}
             >
-              <button
-                htmlFor={index}
-                className=" cursor-pointer   border-black border rounded-full p-0 "
-                onClick={(e) => {
+              <CheckBox
+                checked={note?.completed}
+                onChange={(e) => {
                   e.stopPropagation();
                   setData((prev) =>
                     prev.map((item, i) =>
@@ -65,13 +65,8 @@ const PersonalNotepad = () => {
                     )
                   );
                 }}
-              >
-                <IoCheckmarkCircle
-                  className={`min-w-5 min-h-5 aspect-square opacity-0 hover:opacity-100 ${
-                    note?.completed && `opacity-100`
-                  } text-light bg-primary rounded-full  `}
-                />
-              </button>
+              />
+
               <div className="flex flex-col w-full gap-1">
                 {!isEditMode ? (
                   <h4 className="font-medium text-xs text-[#212121]">

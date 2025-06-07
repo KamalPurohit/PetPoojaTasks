@@ -4,7 +4,7 @@ import Badge from "../UI/Badge";
 
 const ScoreCard = ({ icon, title, stats = [] }) => {
   return (
-    <Card className=" col-span-6 sm:col-span-3 md:col-span-2  ">
+    <Card className=" col-span-6 sm:col-span-3 md:col-span-2 h-fit ">
       <CardContent className="p-3.5 space-y-2.5 ">
         <div className="flex items-center gap-3 ">
           <div className="w-8 h-8 p-1 bg-hover rounded-lg flex items-center justify-center">
