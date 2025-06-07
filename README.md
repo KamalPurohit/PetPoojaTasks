@@ -58,7 +58,7 @@ Go to http://localhost:5173 in your browser.
 
 - **Claude:** Using Recharts and building chart component.
 
-- **GitHub:** Copilot: Assisted with writing repetitive code blocks.
+- **GitHub Copilot:** Assisted with writing repetitive code blocks.
 
 - **Anima:** Building reusable components (Table, Card and Button)
 
