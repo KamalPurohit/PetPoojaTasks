@@ -7,13 +7,18 @@ import { IoIosArrowDown } from "react-icons/io";
 import { LuBuilding } from "react-icons/lu";
 import { GoPlus } from "react-icons/go";
 import { Button } from "../UI/Button";
+import { RxHamburgerMenu } from "react-icons/rx";
 
-const Navbar = () => {
+const Navbar = ({ setIsSidebarOpen }) => {
   return (
-    <div className="w-full border-b border-gray-300 p-3 flex gap-4 fixed top-0 z-30 bg-white right-0">
-      <div className="flex w-44 	">
-        <img src={LogoFull} className="h-8 hidden sm:flex" />
-        <img src={Logo} className="h-8  sm:hidden flex" />
+    <div className="w-full border-b border-gray-300 p-3  flex gap-4  items-center fixed top-0 z-30 bg-white right-0">
+      <RxHamburgerMenu
+        className="w-6 h-6 sm:hidden"
+        onClick={() => setIsSidebarOpen((prev) => !prev)}
+      />
+
+      <div className="flex w-44 max-sm:w-fit	">
+        <img src={LogoFull} className="sm:h-8 h-6" />
       </div>
       <div className=" flex items-center  justify-between max-md:justify-end flex-1 px-4 max-md:p-0">
         <div className="max-md:hidden">

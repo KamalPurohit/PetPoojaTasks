@@ -12,6 +12,7 @@ const Dashboard = () => {
     { label: "Work Allocated", selected: true, id: "workAllocated" },
     { label: "Employee wise progress", selected: false, id: "employeeWise" },
 
+    { label: "Personal Notepad", selected: false, id: "personalNotepad" },
     {
       label: "Department wise allocation",
       selected: false,
@@ -19,7 +20,6 @@ const Dashboard = () => {
     },
     { label: "Overdue tasks", selected: false, id: "overdueTasks" },
     { label: "Workflows", selected: false, id: "workflows" },
-    { label: "Personal Notepad", selected: false, id: "personalNotepad" },
   ]);
   return (
     <div className="flex flex-col gap-6 py-6 flex-1">
