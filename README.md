@@ -37,6 +37,7 @@ Go to http://localhost:5173 in your browser.
 | Routing             | react-router-dom                         |
 | Charts & Graphs     | Recharts                                 |
 | Version Control     | Git + GitHub                             |
+| Hosting             | Netlify                                  |
 
 ## ⏱️ Time Taken
 - Total Duration: ~7–8 hours
