@@ -30,7 +30,7 @@ const Dashboard = () => {
           onClose={() => setShowWidgetModal(false)}
         />
       )}
-      <div className="flex sm:px-6 px-3  text-lg justify-between items-center">
+      <div className="flex sm:px-6 px-4  text-lg justify-between items-center">
         <span className="font-semibold max-sm:text-md">
           Good Evening ! Ajay
         </span>

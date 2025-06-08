@@ -41,7 +41,7 @@ const PersonalNotepad = () => {
             <div
               key={index}
               className={`flex items-start gap-3 p-3 rounded-md hover:bg-neutralLight ${
-                isEditMode && `bg-neutralLight`
+                note?.completed && `bg-neutralLight`
               }`}
               onClick={() => {
                 setEditNotePad((prev) => {
