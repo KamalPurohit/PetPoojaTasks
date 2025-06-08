@@ -12,12 +12,12 @@ import { LuLayoutDashboard } from "react-icons/lu";
 
 const WidgetGrid = ({ widgetList, setShowWidgetModal }) => {
   const componentData = {
-    workAllocated: <WorkAllocated />,
-    employeeWise: <EmployeeWise />,
-    departmentWise: <DepartmenWiseAllocation />,
-    overdueTasks: <OverDueTasks />,
-    workflows: <WorkFlows />,
-    personalNotepad: <PersonalNotepad />,
+    workAllocated: <WorkAllocated key={"WorkAllocate"} />,
+    employeeWise: <EmployeeWise key={"EmployeeWis"} />,
+    departmentWise: <DepartmenWiseAllocation key={"DepartmenWiseAllocatio"} />,
+    overdueTasks: <OverDueTasks key={"OverDueTask"} />,
+    workflows: <WorkFlows key={"WorkFlows"} />,
+    personalNotepad: <PersonalNotepad key={"PersonalNotepad"} />,
   };
   const hasWidget = widgetList?.some((widget) => widget?.selected);
   return (
