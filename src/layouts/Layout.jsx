@@ -4,7 +4,7 @@ import Sidebar from "../components/Layout/Sidebar";
 import { Outlet } from "react-router-dom";
 
 const Layout = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth > 768);
   const sidebarRef = useRef();
 
   //code to handle click outside to close sidebar only on small screens

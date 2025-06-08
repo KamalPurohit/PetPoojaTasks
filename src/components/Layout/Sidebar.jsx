@@ -17,7 +17,7 @@ const Sidebar = forwardRef(
       <div
         ref={sidebarRef}
         className={` sticky top-14 border-r border-gray-300 select-none sidebar  max-sm:absolute  max-sm:shadow-md bg-white z-20   w-fit p-3 flex flex-col gap-1  group justify-between transition-all duration-300   ${
-          !isSidebarOpen && " max-sm:w-0 max-sm:p-0 overflow-hidden"
+          !isSidebarOpen && " max-sm:w-0 max-sm:p-0 max-sm:overflow-hidden"
         } `}
       >
         <button
