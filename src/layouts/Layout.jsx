@@ -6,6 +6,7 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth > 768);
   const sidebarRef = useRef();
+  const menuRef = useRef();
 
   //code to handle click outside to close sidebar only on small screens
   useEffect(() => {
@@ -13,6 +14,8 @@ const Layout = () => {
       if (
         sidebarRef.current &&
         !sidebarRef.current.contains(event.target) &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
         isSidebarOpen
       ) {
         setIsSidebarOpen(false);
@@ -26,10 +29,11 @@ const Layout = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [sidebarRef?.current]);
+
   return (
     <div className="w-full h-screen relative overflow-y-hidden   ">
-      <Navbar setIsSidebarOpen={setIsSidebarOpen} />
+      <Navbar setIsSidebarOpen={setIsSidebarOpen} ref={menuRef} />
       <div className="w-full flex mt-14 ">
         <Sidebar
           ref={sidebarRef}

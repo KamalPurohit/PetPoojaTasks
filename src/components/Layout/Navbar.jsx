@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import LogoFull from "../../assets/logoFull.svg";
 import Logo from "../../assets/Logo.svg";
 import BreadCrumbs from "../UI/BreadCrumbs";
@@ -9,10 +9,10 @@ import { GoPlus } from "react-icons/go";
 import { Button } from "../UI/Button";
 import { HiMenuAlt1 } from "react-icons/hi";
 
-const Navbar = ({ setIsSidebarOpen }) => {
+const Navbar = forwardRef(({ setIsSidebarOpen },ref) => {
   return (
     <div className="w-full border-b border-gray-300 p-3  flex gap-4  items-center fixed top-0 z-30 bg-white right-0">
-      <button onClick={() => setIsSidebarOpen((prev) => !prev)}>
+      <button onClick={() => setIsSidebarOpen((prev) => !prev)} ref={ref} >
         <HiMenuAlt1 className="w-6 h-6 text-primary sm:hidden"/>
 
       </button>
@@ -55,6 +55,6 @@ const Navbar = ({ setIsSidebarOpen }) => {
       </div>
     </div>
   );
-};
+});
 
 export default Navbar;
